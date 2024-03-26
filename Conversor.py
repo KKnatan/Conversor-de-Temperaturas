@@ -17,13 +17,13 @@ tela.configure(background='#353430')
 #codigo
 def fahrenheit():
     user=celcius_entry.get()
-    f= 9* int(user)/5+32
-    fare.set(f)
+    f= 9* float(user)/5+32
+    fare.set(str(f))
         
 def kelvin():
     user=celcius_entry.get()
-    k= int(user)+273
-    kelvin1.set(k)
+    k= float(user)+273
+    kelvin1.set(str(k))
 
 #Configuração da grade(grid)
 tela.columnconfigure(0, weight=7)
